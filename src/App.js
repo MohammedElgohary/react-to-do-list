@@ -6,6 +6,7 @@ import { actions } from "./controllers/actions";
 
 function App() {
   const [text, setText] = useState("");
+  const [search, setSearch] = useState("");
   const [edit, setEdit] = useState(null);
 
   const [todos, dispatch] = useReducer((state, { type, data }) => {
@@ -74,7 +75,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="mx-5 mx-sm-3">
+      <div className="mx-5 mx-sm-3 mx-xs-3">
         <Row>
           <Col lg="4">
             <TodosInput
@@ -82,7 +83,17 @@ function App() {
             />
           </Col>
           <Col lg="8">
-            <TodoList {...{ todos, dispatch, actions, setEdit, setText }} />
+            <TodoList
+              {...{
+                todos,
+                dispatch,
+                actions,
+                setEdit,
+                setText,
+                search,
+                setSearch,
+              }}
+            />
             <GeneralActions {...{ todos, dispatch, actions }} />
           </Col>
         </Row>
