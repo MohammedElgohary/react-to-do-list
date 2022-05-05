@@ -41,6 +41,21 @@ body::-webkit-scrollbar {
   color: #edcc8a !important;
 }
 
+.list-body,
 .app-body {
   min-height: 70vh;
+}
+
+.app-body {
+  animation: showFading 0.3s ease-in;
+  -webkit-animation: showFading 0.3s ease-in;
+}
+
+@keyframes showFading {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useReducer, useState, useEffect } from "react";
 import { Col, Row } from "reactstrap";
 
-import { GeneralActions, TodosInput, TodoList } from "../index";
+import { GeneralActions, TodosInput, TodoList, Footer } from "../index";
 
 import { actions, MySwal } from "../../controllers";
 
@@ -93,7 +93,7 @@ function Body({ initalTodos }) {
             {...{ dispatch, text, setText, edit, actions, addEditTodo }}
           />
         </Col>
-        <Col lg="8">
+        <Col lg="8" className="list-body">
           <TodoList
             {...{
               todos,
@@ -106,6 +106,8 @@ function Body({ initalTodos }) {
             }}
           />
           <GeneralActions {...{ todos, dispatch, actions }} />
+
+          <Footer />
         </Col>
       </Row>
     </div>

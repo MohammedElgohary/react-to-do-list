@@ -1,5 +1,5 @@
 import React, { useState, useLayoutEffect } from "react";
-import { Header, Body, Footer, Loader } from "./components";
+import { Header, Body, Loader } from "./components";
 
 function App() {
   const [loaded, setLoaded] = useState(false);
@@ -13,6 +13,7 @@ function App() {
       }
     }
 
+    //  just waiting a second  to show the loader
     setTimeout(() => {
       setLoaded(true);
     }, 1000);
@@ -21,14 +22,7 @@ function App() {
   return (
     <>
       <Header />
-      {loaded ? (
-        <>
-          <Body initalTodos={todos} />
-          <Footer />
-        </>
-      ) : (
-        <Loader />
-      )}
+      {loaded ? <Body initalTodos={todos} /> : <Loader />}
     </>
   );
 }
