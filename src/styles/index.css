@@ -1,3 +1,20 @@
+*:focus-visible {
+  outline: 0px !important;
+  box-shadow: unset !important;
+}
+
+@-moz-document url-prefix() {
+  html {
+    scrollbar-width: none;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+  display: none;
+}
+
 .tasks-container {
   max-height: 80vh;
   overflow: auto;
@@ -18,4 +35,12 @@
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+}
+
+.text-primary {
+  color: #edcc8a !important;
+}
+
+.app-body {
+  min-height: 70vh;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { Todo, NoItemsFound } from "./index";
-import { Row, Col, FormGroup, Label, Input } from "reactstrap";
-function TodoList({
+import { FormGroup, Input } from "reactstrap";
+const TodoList = ({
   todos,
   dispatch,
   actions,
@@ -9,7 +9,7 @@ function TodoList({
   setText,
   search,
   setSearch,
-}) {
+}) => {
   return (
     <div className="mt-5 p-5 card border-0">
       <div className="d-flex flex-wrap align-items-center justify-content-between">
@@ -39,6 +39,6 @@ function TodoList({
       </div>
     </div>
   );
-}
+};
 
 export { TodoList };

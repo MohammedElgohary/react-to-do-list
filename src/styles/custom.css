@@ -10874,7 +10874,7 @@ h5,
   color: #e3b04b;
 }
 
-.btn {
+.btn:not(.btn-sm) {
   cursor: pointer;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
