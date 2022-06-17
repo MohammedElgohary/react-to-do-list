@@ -11,7 +11,7 @@ function Todo({ todo, dispatch, actions, setEdit, setText }) {
       className={
         todo.completed
           ? "d-flex flex-wrap justify-content-between align-items-center bg-light p-4 mb-3 border border-success"
-          : "d-flex flex-wrap justify-content-between align-items-center bg-light p-4 mb-3"
+          : "d-flex flex-wrap justify-content-between align-items-center bg-light p-4 mb-3 border border-gray"
       }
     >
       <div
