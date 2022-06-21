@@ -13,4 +13,4 @@
 ## Used libraries:
   * [`sweet-alert2`](https://www.npmjs.com/package/sweetalert2)
   * [`bootstrap`](https://www.npmjs.com/package/bootstrap)
-  * [`reactstrap`](`https://www.npmjs.com/package/reactstrap`)
+  * [`reactstrap`](https://www.npmjs.com/package/reactstrap)
