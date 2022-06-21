@@ -3,7 +3,7 @@
 ## [`See Live here`](https://react-to-do-list-delta.vercel.app/)
 
 
-## Build with:
+## Made with:
   * React
   * React Hooks
   * HTML5
