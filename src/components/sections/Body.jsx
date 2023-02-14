@@ -80,13 +80,11 @@ function Body({ initalTodos }) {
   };
 
   useEffect(() => {
-    if (window) {
-      window.localStorage.setItem("todos", JSON.stringify(todos));
-    }
+    if (window) window.localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
   return (
-    <div className="mx-5 mx-sm-3 mx-xs-3 app-body">
+    <div className="mx-5 mx-sm-2 mx-xs-1 app-body">
       <Row>
         <Col lg="4">
           <TodosInput

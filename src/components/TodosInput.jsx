@@ -5,6 +5,7 @@ import { CgArrowRight } from "react-icons/cg";
 import { FiPlus } from "react-icons/fi";
 
 import { Badge } from "reactstrap";
+import Select from "react-select";
 
 function TodosInput({ dispatch, text, setText, edit, actions, addEditTodo }) {
   // keyboard key code
@@ -47,6 +48,31 @@ function TodosInput({ dispatch, text, setText, edit, actions, addEditTodo }) {
             onKeyUp={onKeyUp}
           />
         </FormGroup>
+
+        {/* <FormGroup>
+          <Label>Choose color</Label>
+          <Select
+            options={[
+              {
+                label: "Red",
+                value: "red",
+              },
+              {
+                label: "Orange",
+                value: "orange",
+              },
+              {
+                label: "Yellow",
+                value: "yellow",
+              },
+              {
+                label: "Green",
+                value: "green",
+              },
+            ]}
+          />
+        </FormGroup> */}
+
         <Button
           color="primary"
           className="rounded-pill"
